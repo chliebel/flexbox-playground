@@ -1,0 +1,19 @@
+{
+  "name": "flexbox-playground",
+  "version": "1.0.0",
+  "description": "Playground for the CSS Flexible Boxes Layout Module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chliebel/flexbox-playground.git"
+  },
+  "author": "Christian Liebel",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/chliebel/flexbox-playground/issues"
+  },
+  "homepage": "https://github.com/chliebel/flexbox-playground#readme"
+}
