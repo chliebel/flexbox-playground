@@ -8,14 +8,18 @@ body {
   user-select: none;
   cursor: default;
   direction: ltr;
+  color: #0087f7;
 }
 
 body.rtl {
   direction: rtl;
 }
 
-h2 {
+a {
   color: #0087f7;
+}
+
+h2 {
   text-align: center;
   margin-top: 40px;
 }
@@ -46,4 +50,9 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin: 60px 0 30px;
 }
