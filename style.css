@@ -24,24 +24,23 @@ h2 {
   margin-top: 40px;
 }
 
-.container {
+.flex {
   background: #0087f7;
   display: flex;
   padding: 9px;
   counter-reset: item;
 }
 
-.container.inline-flex {
+.flex.inline-flex {
   display: inline-flex;
 }
 
-.container .item:before {
-  color: #0087f7;
+.flex .item:before {
   content: counter(item);
   counter-increment: item;
 }
 
-.container .item {
+.flex .item {
   background: white;
   min-width: 40px;
   min-height: 40px;
