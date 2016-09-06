@@ -5,129 +5,134 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <label>
-  	  <input type="checkbox" id="rtlCheckbox">
-      RTL
-    </label>
-    <h2>flex-direction: column;</h2>
-    <div class="flex" style="flex-direction: column;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>flex-direction: column-reverse;</h2>
-    <div class="flex" style="flex-direction: column-reverse;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>flex-direction: row;</h2>
-    <div class="flex" style="flex-direction: row;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>flex-direction: row-reverse;</h2>
-    <div class="flex" style="flex-direction: row-reverse;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
     <a href="https://github.com/chliebel/flexbox-playground" target="_blank" rel="noopener noreferrer"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="https://aral.github.io/fork-me-on-github-retina-ribbons/right-old-burgundy@2x.png" alt="Fork me on GitHub"></a>
 
-    <h2>align-items: baseline;</h2>
-    <div class="flex" style="height: 100px; align-items: baseline;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>align-items: center;</h2>
-    <div class="flex" style="height: 100px; align-items: center;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>align-items: flex-end;</h2>
-    <div class="flex" style="height: 100px; align-items: flex-end;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>align-items: flex-start;</h2>
-    <div class="flex" style="height: 100px; align-items: flex-start;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>align-items: stretch;</h2>
-    <div class="flex" style="height: 100px; align-items: stretch;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
+	  <button type="button" id="rtlToggle">Toggle RTL</button>
+    
+    <div class="container">
+      <h2>flex-direction: column;</h2>
+      <div class="flex" style="flex-direction: column;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>flex-direction: column-reverse;</h2>
+      <div class="flex" style="flex-direction: column-reverse;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>flex-direction: row;</h2>
+      <div class="flex" style="flex-direction: row;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>flex-direction: row-reverse;</h2>
+      <div class="flex" style="flex-direction: row-reverse;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <hr>
+
+      <h2>align-items: baseline;</h2>
+      <div class="flex" style="height: 100px; align-items: baseline;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>align-items: center;</h2>
+      <div class="flex" style="height: 100px; align-items: center;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>align-items: flex-end;</h2>
+      <div class="flex" style="height: 100px; align-items: flex-end;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>align-items: flex-start;</h2>
+      <div class="flex" style="height: 100px; align-items: flex-start;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>align-items: stretch;</h2>
+      <div class="flex" style="height: 100px; align-items: stretch;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <hr>
+
+      <h2>justify-content: center;</h2>
+      <div class="flex" style="justify-content: center;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>justify-content: flex-end;</h2>
+      <div class="flex" style="justify-content: flex-end;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>justify-content: flex-start;</h2>
+      <div class="flex" style="justify-content: flex-start;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>justify-content: space-around;</h2>
+      <div class="flex" style="justify-content: space-around;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <h2>justify-content: space-between;</h2>
+      <div class="flex" style="justify-content: space-between;">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>
+      <hr>
     </div>
 
-    <h2>justify-content: center;</h2>
-    <div class="flex" style="justify-content: center;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>justify-content: flex-end;</h2>
-    <div class="flex" style="justify-content: flex-end;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>justify-content: flex-start;</h2>
-    <div class="flex" style="justify-content: flex-start;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>justify-content: space-around;</h2>
-    <div class="flex" style="justify-content: space-around;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
-    <h2>justify-content: space-between;</h2>
-    <div class="flex" style="justify-content: space-between;">
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-      <div class="item"></div>
-    </div>
     <footer>
       Brought to you by <a href="https://christianliebel.com" target="_blank" rel="noopener noreferrer">Christian Liebel</a>
       (<a href="https://twitter.com/chris_liebel" target="_blank" rel="noopener noreferrer">@chris_liebel</a>).
       Source on <a href="https://github.com/chliebel/flexbox-playground" target="_blank" rel="noopener noreferrer">GitHub</a>.
     </footer>
     <script>
-      document.querySelector('#rtlCheckbox').onchange = function (evt) {
-      	document.body.classList.toggle('rtl');
+      document.querySelector('#rtlToggle').onclick = function () {
+      	document.querySelector('.container').classList.toggle('rtl');
       };
     </script>
   </body>

@@ -11,10 +11,6 @@ body {
   color: #0087f7;
 }
 
-body.rtl {
-  direction: rtl;
-}
-
 a {
   color: #0087f7;
 }
@@ -22,6 +18,15 @@ a {
 h2 {
   text-align: center;
   margin-top: 40px;
+}
+
+hr {
+  border-color: transparent;
+  margin: 60px 0;
+}
+
+.container.rtl {
+  direction: rtl;
 }
 
 .flex {
@@ -53,5 +58,5 @@ h2 {
 
 footer {
   text-align: center;
-  margin: 60px 0 30px;
+  margin-bottom: 30px;
 }
