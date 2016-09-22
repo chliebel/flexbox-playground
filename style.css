@@ -9,6 +9,7 @@ body {
   cursor: default;
   direction: ltr;
   color: #0087f7;
+  margin: 0;
 }
 
 a {
@@ -23,6 +24,19 @@ h2 {
 hr {
   border-color: transparent;
   margin: 60px 0;
+}
+
+header {
+  display: flex;
+}
+
+header > div {
+  margin: 12px;
+  flex: 1;
+}
+
+.container {
+  margin: 12px;
 }
 
 .container.rtl {

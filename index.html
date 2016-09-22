@@ -5,9 +5,18 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a href="https://github.com/chliebel/flexbox-playground" target="_blank" rel="noopener noreferrer"><img style="position: absolute; top: 0; right: 0; border: 0; width: 149px; height: 149px;" src="https://aral.github.io/fork-me-on-github-retina-ribbons/right-old-burgundy@2x.png" alt="Fork me on GitHub"></a>
-
-	  <button type="button" id="rtlToggle">Toggle RTL</button>
+    <header>
+      <div>
+        <h1>Flexbox Playground</h1>
+        RTL:
+        <button type="button" id="rtlToggle">Toggle RTL</button>
+        Writing Mode:
+        <button type="button" id="writingModeHtb">horizontal-tb</button>
+        <button type="button" id="writingModeVrl">vertical-rl</button>
+        <button type="button" id="writingModeVlr">vertical-lr</button>
+      </div>
+      <a href="https://github.com/chliebel/flexbox-playground" target="_blank" rel="noopener noreferrer"><img style="width: 149px; height: 149px;" src="https://aral.github.io/fork-me-on-github-retina-ribbons/right-old-burgundy@2x.png" alt="Fork me on GitHub"></a>
+    </header>
     
     <div class="container">
       <h2>flex-direction: column;</h2>
@@ -157,8 +166,21 @@
       Source on <a href="https://github.com/chliebel/flexbox-playground" target="_blank" rel="noopener noreferrer">GitHub</a>.
     </footer>
     <script>
+      function setWritingMode(mode) {
+        document.querySelector('.container').style.writingMode = mode;
+      }
+
       document.querySelector('#rtlToggle').onclick = function () {
-      	document.querySelector('.container').classList.toggle('rtl');
+        document.querySelector('.container').classList.toggle('rtl');
+      };
+      document.querySelector('#writingModeHtb').onclick = function () {
+        setWritingMode('horizontal-tb');
+      };
+      document.querySelector('#writingModeVlr').onclick = function () {
+        setWritingMode('vertical-lr');
+      };
+      document.querySelector('#writingModeVrl').onclick = function () {
+        setWritingMode('vertical-rl');
       };
     </script>
   </body>
